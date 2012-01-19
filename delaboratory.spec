@@ -1,6 +1,6 @@
 Name:		delaboratory
 Version:	0.5
-Release:	1
+Release:	2
 Summary:	Free Software color correction utility
 License:	GPLv3+
 Group:		Graphics
@@ -8,7 +8,7 @@ Url:		https://code.google.com/p/delaboratory/
 Source0:	https://delaboratory.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		delaboratory-0.5-mdv-makefile.patch
 BuildRequires:	tiff-devel
-BuildRequires:	wxGTK-devel
+BuildRequires:	wxgtku-devel
 BuildRequires:	libxml2-devel
 
 
