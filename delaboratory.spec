@@ -1,12 +1,12 @@
 Name:		delaboratory
-Version:	0.6
+Version:	0.7
 Release:	1
 Summary:	Free Software color correction utility
 License:	GPLv3+
 Group:		Graphics
 Url:		https://code.google.com/p/delaboratory/
 Source0:	https://delaboratory.googlecode.com/files/%{name}-%{version}.tar.gz
-Patch0:		delaboratory-0.6-mdv-makefile.patch
+Patch0:		delaboratory-0.7-mdv-makefile.patch
 BuildRequires:	tiff-devel
 BuildRequires:	wxgtku-devel
 BuildRequires:	libxml2-devel
@@ -24,7 +24,7 @@ CMY/CMYK, HSL/HSV) with floating-point precision per channel.
 
 %build
 %setup_compile_flags
-make
+make DEBUG=YES
 
 %install
 install -D -m0755 delaboratory "%{buildroot}%{_bindir}/delaboratory"
