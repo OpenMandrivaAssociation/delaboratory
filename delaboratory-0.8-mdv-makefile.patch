@@ -1,0 +1,24 @@
+Index: delaboratory-0.8/Makefile
+===================================================================
+--- delaboratory-0.8.orig/Makefile
++++ delaboratory-0.8/Makefile
+@@ -33,7 +33,7 @@ PROPERTIES_OBJECTS = ${addprefix obj/, $
+ ALGORITHMS_OBJECTS_TMP = ${addsuffix .o, ${ALGORITHMS}}
+ ALGORITHMS_OBJECTS = ${addprefix obj/, ${ALGORITHMS_OBJECTS_TMP}}
+ 
+-CXXFLAGS=
++CXXFLAGS+=
+ 
+ ifeq (${OS}, WINDOWS)
+ # settings for Windows build
+@@ -46,8 +46,8 @@ EXE=.exe
+ else
+ # settings for standard build
+ 
+-LDFLAGS=`${WXCONFIG} --libs` `xml2-config --libs` -ltiff
+-CXXFLAGS_WX=`${WXCONFIG} --cxxflags` `xml2-config --cflags`
++LDFLAGS+=`${WXCONFIG} --libs` `xml2-config --libs` -ltiff
++CXXFLAGS_WX+=`${WXCONFIG} --cxxflags` `xml2-config --cflags`
+ 
+ endif
+ 
