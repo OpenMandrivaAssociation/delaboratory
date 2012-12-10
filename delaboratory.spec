@@ -50,3 +50,30 @@ EOF
 %{_datadir}/applications/%{name}.desktop
 
 
+
+
+%changelog
+* Tue Jul 31 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.8-2
++ Revision: 811500
+- req dcraw for import RAW photos
+
+* Mon Jul 30 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.8-1
++ Revision: 811390
+- new version 0.8
+
+* Wed Apr 11 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.7-1
++ Revision: 790299
+- update to 0.7
+
+* Fri Feb 17 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.6-1
++ Revision: 776159
+- update to 0.6
+
+* Thu Jan 19 2012 Andrey Bondrov <abondrov@mandriva.org> 0.5-2
++ Revision: 762299
+- Rebuild against utf8 wxGTK2.8
+
+* Fri Nov 11 2011 Andrey Smirnov <asmirnov@mandriva.org> 0.5-1
++ Revision: 730024
+- imported package delaboratory
+
