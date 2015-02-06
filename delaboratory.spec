@@ -1,6 +1,6 @@
 Name:		delaboratory
 Version:	0.8
-Release:	2
+Release:	3
 Summary:	Free Software color correction utility
 License:	GPLv3+
 Group:		Graphics
