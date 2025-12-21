@@ -8,6 +8,7 @@ Url:		https://code.google.com/p/delaboratory/
 Source0:	https://delaboratory.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		delaboratory-0.8-mdv-makefile.patch
 Requires:	dcraw
+BuildRequires:	make
 BuildRequires:	tiff-devel
 BuildRequires:	wxgtku-devel
 BuildRequires:	libxml2-devel
