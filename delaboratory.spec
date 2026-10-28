@@ -27,6 +27,13 @@ CMY/CMYK, HSL/HSV) with floating-point precision per channel.
 %build
 %setup_compile_flags
 CXXFLAGS_WX="%{optflags}" ; export CXXFLAGS_WX ;
+mkdir -p wx-wrap
+cat > wx-wrap/wx-config << 'EOF'
+#!/bin/sh
+exec /usr/bin/wx-config-unicode "$@"
+EOF
+chmod 755 wx-wrap/wx-config
+export PATH="$PWD/wx-wrap:$PATH"
 make DEBUG=YES
 
 %install
