@@ -11,7 +11,7 @@ Requires:	dcraw
 BuildRequires:	make
 BuildRequires:	tiff-devel
 BuildRequires:	wxgtku-devel
-BuildRequires:	libxml2-devel
+BuildRequires:	pkgconfig(libxml-2.0)
 
 
 %description
